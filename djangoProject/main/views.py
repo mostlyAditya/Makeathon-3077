@@ -1,6 +1,5 @@
 from django.shortcuts import render
-from . import logic
-from django.template import Context
+from .scrappers import driver as dr
 
 # Create your views here.
 
@@ -13,5 +12,6 @@ def index(request):
 
 
 def result(request):
-    context = {'data': request.POST['url']}
+    det = dr.driver(request.POST['url'])
+    context = {'dataA': det[0], 'priceA': det[1], 'linkA': det[2]}
     return render(request, 'main/results.html', context)
