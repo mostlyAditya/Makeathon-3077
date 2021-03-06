@@ -17,8 +17,10 @@ def parent_scraper(details):
 
         elif site_name == "F":
             query = title + "Amazon"
-
-        url_link = [x for x in search(query, tld="co.in", num=1, stop=1, pause=2)]
+        try:
+            url_link = [x for x in search(query, tld="co.in", num=1, stop=1, pause=2)]
+        except:
+            return ['Unavailable', 'Unavailable', 'Unavailable']
         result = None
         if site_name == 'A':
             result = fsc.pass_url(url_link[0])
