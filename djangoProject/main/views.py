@@ -5,7 +5,13 @@ from django.template import Context
 # Create your views here.
 
 
-def index(response):
-    temp = logic.get_amazon_results()
-    context = {'data': temp}
-    return render(response, 'main/index.html', context=context)
+def index(request):
+    if request.method == 'POST':
+        print(request.POST)
+        return render(request, 'main/index.html')
+    return render(request, 'main/index.html')
+
+
+def result(request):
+    context = {'data': request.POST['url']}
+    return render(request, 'main/results.html', context)

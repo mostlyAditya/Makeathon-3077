@@ -18,7 +18,7 @@
                 </div>
                 <div class="row">
                     <div class="col-lg-8 mx-auto">
-                        <form><input class="form-control" type="text" style="background: transparent;color: rgb(225,227,226);"></form>
+                        <form action="result" method="POST">{% csrf_token %}<input class="form-control" name="url" type="text" style="background: transparent;color: rgb(225,227,226);"></form>
                     </div>
                 </div>
             </div>
