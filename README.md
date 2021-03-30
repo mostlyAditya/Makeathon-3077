@@ -12,6 +12,6 @@ This is our project for Makeathon 3077. This is a price comparison website that 
 
 ## Steps to run project(Docker Method):
 - Make sure you have Docker installed on your system.
-- In cmd, enter `docker push justshivam/penny:latest`.
+- In cmd, enter `docker pull justshivam/penny:latest`.
 - Then run the image by entering `docker run -p 8000:8000 justshivam/penny:latest` .
 - open `localhost:8000` in web browser.
