@@ -5,10 +5,9 @@ This is our project for Makeathon 3077. This is a price comparison website that 
 - `Python`  
 
 ## Steps to run project(VENV METHOD):  
-<br/>
 - Run `install-dependencies.bat` to install the dependencies.
-- Run `runsever.bat` to run the django testserver.  <br/>
-- Then open `localhost:8000` in the web browser  <br/>
+- Run `runsever.bat` to run the django testserver.
+- Then open `localhost:8000` in the web browser.
 <br/>
 
 ## Steps to run project(Docker Method):
