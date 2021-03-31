@@ -5,4 +5,6 @@ cls
 pip install -r requirements.txt
 cls
 python manage.py migrate
+cls
+echo SECRET_KEY=temp > .env
 exit
